@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Basic Home Page">
+    <title>Joshua Petersen's Course Home Page</title>
+    <style>
+        #content{
+            margin: 0 auto;
+            width: 50%;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        header{
+            display: grid;
+            grid-template-columns: 30% 70%;
+            background-color: rgb(21, 21, 173);
+            color: white;
+            font-size: 24pt;
+            text-align: center;
+            align-items: center;
+        }
+        main{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        footer{
+            background-color: rgb(21, 21, 173);
+            color: white;
+            text-align: center;
+        }
+        #datediv{
+            color: rgb(246, 241, 80);
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div><img src="images/portait.jpg" alt="portrait of me"> </div>
+            <div>Joshua Petersen</div>
+        </header>
+        <main>
+            <h1>WDD 230: Asssignment Portal</h1>
+            <hr>
+            <ul>
+                <li><h2>Lesson 02: <a href="">Title</a></h2></li>
+                <li><h2>Lesson 03: <a href="">Title</a></h2></li>
+                <li><h2>Lesson 04: <a href="">Title</a></h2></li>
+                <li><h2>Lesson 05: <a href="">Title</a></h2></li>
+                <li><h2>Lesson 06: <a href="">Title</a></h2></li>
+                <li><h2>Lesson 07: <a href="">Title</a></h2></li>
+                <li><h2>Lesson 08: <a href="">Title</a></h2></li>
+                <li><h2>Lesson 09: <a href="">Title</a></h2></li>
+                <li><h2>Lesson 10: <a href="">Title</a></h2></li>
+                <li><h2>Lesson 11: <a href="">Title</a></h2></li>
+                <li><h2>Lesson 12: <a href="">Title</a></h2></li>
+            </ul>
+            <div>Some lessons require more than one link.</div>
+            <hr>
+        </main>
+        <footer>
+            <div>&copy; <span>hello world</span> | Joshua Petersen | Rextown USA </div>
+            <div id="datediv">Last Updated: <span id="lastupdatedate"></span></div>
+        </footer>
+    </div>
+    <script>
+        const today = new Date();
+        document.querySelector("footer div span").textContent = today.getFullYear();
+        // document.getElementById("lastupdatedate").textContent = document.lastModified;
+        const lastModified = new Date(document.lastModified);
+        document.getElementById("lastupdatedate").textContent = `${lastModified.getMonth()+1}/${lastModified.getDate()}/${lastModified.getFullYear()}`;
+    </script>
+</body>
+</html>
