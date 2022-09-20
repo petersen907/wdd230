@@ -6,33 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Basic Home Page">
     <title>Joshua Petersen's Course Home Page</title>
-    <style>
-        #content{
-            margin: 0 auto;
-            width: 50%;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        }
-        header{
-            display: grid;
-            grid-template-columns: 30% 70%;
-            background-color: rgb(21, 21, 173);
-            color: white;
-            font-size: 24pt;
-            text-align: center;
-            align-items: center;
-        }
-        main{
-            font-family: 'Times New Roman', Times, serif;
-        }
-        footer{
-            background-color: rgb(21, 21, 173);
-            color: white;
-            text-align: center;
-        }
-        #datediv{
-            color: rgb(246, 241, 80);
-        }
-    </style>
+    <link rel="stylesheet" href="./css/homepage.css">
+    <script src="./js/homepage.js" defer></script>
 </head>
 <body>
     <div id="content">
@@ -65,11 +40,7 @@
         </footer>
     </div>
     <script>
-        const today = new Date();
-        document.querySelector("footer div span").textContent = today.getFullYear();
-        // document.getElementById("lastupdatedate").textContent = document.lastModified;
-        const lastModified = new Date(document.lastModified);
-        document.getElementById("lastupdatedate").textContent = `${lastModified.getMonth()+1}/${lastModified.getDate()}/${lastModified.getFullYear()}`;
+        
     </script>
 </body>
 </html>
