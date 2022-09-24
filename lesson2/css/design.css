@@ -15,7 +15,8 @@ header{
 
 /* phone or baseline views **************************/
 main {
-	max-width: 767px;
+    width: 100%;
+	max-width: 1024px;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -47,7 +48,7 @@ main section:nth-child(2) {
 }
 
 /* Tablet Views ******************************/
-@media screen and (min-width: 37.5em) {
+@media only screen and (min-width: 600px) {
 	main {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -71,7 +72,7 @@ main section:nth-child(2) {
 }
 
 /* Desktop Views ****************************/
-@media screen and (min-width: 60em) {
+@media only screen and (min-width: 960px) {
 	main {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
