@@ -8,36 +8,48 @@ header{
     align-items: center;
 }
 main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 0.8rem;
     font-family: 'Times New Roman', Times, serif;
 }
+
+main section{
+    margin: 0.5rem;
+    border: 1px solid #bbb;
+    padding: 0 1rem;
+    background-color: #eee;
+}
+
+/* Tablet Views */
+@media only screen and (mid-width: 37.5em){
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section:nth-child(3){
+        grid-column: span 2;
+    }
+}
+
+/* Phone View */
+@media only screen and (mid-width: 20em) {
+
+    main{
+        grid-template-columns: 1fr;
+    }
+
+    section:nth-child(3){
+        grid-column: span 3;
+    }
+}
+
+
 footer{
     background-color: rgb(21, 21, 173);
     color: white;
     text-align: center;
-}
-#header1div{
-    display: grid;
-    grid-template-columns: 30%;
-    background-color: rgb(21, 21, 173);
-    color: rgb(249, 249, 246);
-    text-align: center;
-    align-items: center;
-}
-#header2div{
-    display: grid;
-    grid-template-columns: 60%;
-    background-color: rgb(21, 21, 173);
-    color: rgb(251, 251, 248);
-    text-align: center;
-    align-items: center;
-}
-#header3div{
-    display: grid;
-    grid-template-columns:  100%;
-    background-color: rgb(21, 21, 173);
-    color: rgb(253, 253, 251);
-    text-align: center;
-    align-items: center;
 }
 .wrapper{
     display: grid;
