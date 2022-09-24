@@ -11,7 +11,6 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     font-size: 0.8rem;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 main section{
@@ -27,21 +26,20 @@ main section{
     main {
         grid-template-columns: 1fr 1fr;
     }
-
     section:nth-child(3){
         grid-column: span 2;
     }
 }
 
 /* Phone View */
-@media only screen and (mid-width: 20em) {
+@media only screen and (mid-width: 60em) {
 
     main{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     section:nth-child(3){
-        grid-column: span 3;
+        grid-column: span 1;
     }
 }
 
@@ -50,10 +48,4 @@ footer{
     background-color: rgb(21, 21, 173);
     color: white;
     text-align: center;
-}
-.wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: 34% 34% 34%;
-    grid-template-columns: repeat(3, fr);
 }
