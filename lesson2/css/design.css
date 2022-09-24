@@ -21,6 +21,10 @@ main {
 	grid-template-columns: 1fr;
 	font-size: 0.8rem;
 }
+main section h1 {
+	background-color: #536878;
+    color: white;
+}
 
 main section h2 {
 	color: #536878;
