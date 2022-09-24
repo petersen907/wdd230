@@ -8,65 +8,75 @@ header{
     grid-template-columns: 100%;
     background-color: rgb(21, 21, 173);
     color: white;
-    font-size: 24pt;
+    font-size: 16pt;
     text-align: center;
     align-items: center;
 }
 
-main{
-    max-width: 767px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    font-size: 0.8rem;
+/* phone or baseline views **************************/
+main {
+	max-width: 767px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
 }
 
-main section h2{
-    color: #536878;
+main section h2 {
+	color: #536878;
 }
 
-main section{
-    margin: 0.5rem;
-    border: 1px solid #bbb;
-    padding: 0 1rem;
-    background-color: #eee;
+main section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: #eee;
 }
 
-.colimage{
-    box-shadow: 0 0 30px #333;
+main section:nth-child(2) {
+	display: none;
+	margin: 0.5rem;
 }
 
-/* Tablet Views */
-@media only screen and (mid-width: 37.5em){
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
-    section:nth-child(2){
-        display: block;
-    }
-    section:nth-child(3){
-        grid-column: span 2;
-    }
-    main section picture {
-        display: block;
-    }
-    main section picture img {
-        width: 100%;
-        height: auto;
-        border: 1px solid #bbb;
-    }
+.colimage {
+	box-shadow: 0 0 30px #333;
 }
 
-/* Desktop Views */
-@media only screen and (mid-width: 60em) {
-    main{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
 
-    section:nth-child(3){
-        grid-column: span 1;
-    }
+	main section:nth-child(2) {
+		display: block;
+	}
+
+	main section:nth-child(3) {
+		grid-column: span 2;
+	}
+
+	main section picture {
+		display: block;
+	}
+	main section picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
 }
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	main section:nth-child(3) {
+		grid-column: span 1;
+	}
+}
+
 footer{
     background-color: rgb(21, 21, 173);
     color: white;
