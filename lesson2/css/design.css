@@ -32,11 +32,6 @@ main section{
     background-color: #eee;
 }
 
-main section:nth-child(2){
-    display: none;
-    margin: 0.5rem;
-}
-
 .colimage{
     box-shadow: 0 0 30px #333;
 }
