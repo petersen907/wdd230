@@ -47,7 +47,7 @@ main section:nth-child(2) {
 }
 
 /* Tablet Views ******************************/
-@media only screen and (min-width: 37.5em) {
+@media screen and (min-width: 37.5em) {
 	main {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -71,11 +71,17 @@ main section:nth-child(2) {
 }
 
 /* Desktop Views ****************************/
-@media only screen and (min-width: 60em) {
+@media screen and (min-width: 60em) {
 	main {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 
+    main section:nth-child(1) {
+		grid-column: span 1;
+	}
+    main section:nth-child(2) {
+		grid-column: span 1;
+	}
 	main section:nth-child(3) {
 		grid-column: span 1;
 	}
