@@ -1,3 +1,7 @@
+body{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
 header{
     display: grid;
     grid-template-columns: 100%;
@@ -8,8 +12,10 @@ header{
     align-items: center;
 }
 main{
+    max-width: 767px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     font-size: 0.8rem;
 }
 
@@ -18,6 +24,11 @@ main section{
     border: 1px solid #bbb;
     padding: 0 1rem;
     background-color: #eee;
+}
+
+main section:nth-child(2){
+    display: none;
+    margin: 0.5rem;
 }
 
 /* Tablet Views */
