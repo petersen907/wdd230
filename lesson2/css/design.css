@@ -23,7 +23,7 @@ main {
 	grid-template-columns: 1fr;
 	font-size: 0.8rem;
 }
-main section h1 {
+.principleheader {
 	background-color: #536878;
     color: white;
 }
