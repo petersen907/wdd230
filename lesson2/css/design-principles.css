@@ -52,7 +52,7 @@ main section:nth-child(2) {
 /* Tablet Views ******************************/
 @media only screen and (min-width: 600px) {
 	main {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 2fr 1fr;
 	}
 
 	main section:nth-child(2) {
