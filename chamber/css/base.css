@@ -37,6 +37,7 @@ header {
 }
 
 nav {
+	margin: 0 auto	;
     position: absolute;
     top: 40px;
     right: 5px;
@@ -99,6 +100,8 @@ main {
 }
 #spot3{
 	display: none;
+	height: 150px;
+	width: 150px;
 }
 
 main section h2 {
@@ -139,6 +142,7 @@ main section:nth-child(2) {
 
 	main section:nth-child(2) {
 		display: block;
+		grid-column: span 2;
 	}
 
 	main section:nth-child(3) {
@@ -160,7 +164,19 @@ main section:nth-child(2) {
 	#spot3{
 		display: grid;
 	}
-	
+	nav button {
+		display: none;
+	}
+	nav ul#navbar{
+		display:flex;
+		justify-content: center;
+		margin-left: 2vw;
+		border-left: 1px solid rgba(0, 0, 0, 0.3);
+	}
+	nav ul li a{
+		border: none;
+		border-right: rgba(0, 0, 0, 0.3);
+	}
 	main section:nth-child(3) {
 		grid-column: span 1;
 	}
