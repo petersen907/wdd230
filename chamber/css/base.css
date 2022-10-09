@@ -42,7 +42,7 @@ button{
 nav {
 	margin: 0 auto	;
     position: absolute;
-    top: 25px;
+    top: 50px;
     right: 5px;
 }
 nav ul{
@@ -56,6 +56,10 @@ nav a{
 	color: white;
 	padding: .5rem;
 }
+nav a:hover {
+	background-color: #E7D0A2;
+	color: black;
+  }
 nav ul.open{
 	display:block;
 }
@@ -193,6 +197,12 @@ footer{
 	"join join join join"
 	"event event event weather";
 	}
+	nav {
+		margin: 0 auto	;
+		position: absolute;
+		top: 10px;
+		right: 5px;
+	}
 	main section {
 		height: 150px;
 		width: auto;
@@ -240,6 +250,12 @@ footer{
 	"event hero hero spot"
 	"weather hero hero spot"
 	"join news news spot";
+	}
+	nav {
+		margin: 0 auto	;
+		position: absolute;
+		top: 25px;
+		right: 5px;
 	}
 	main section {
 		height: 150px;
