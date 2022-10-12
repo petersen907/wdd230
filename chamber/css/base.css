@@ -174,16 +174,18 @@ main section:nth-child(2) {
     grid-column: span 1;
 }
 footer{
-    width: 100%;
-    background-color: #3E5B4A;
-    color: white;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-areas: 
-	"logo"
-	"headings"
-	"datediv";
+	width: 100%;
+	background-color: #3E5B4A;
+	color: white;
+     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "f1"
+    "fl"
+    "info";
+    text-align: center;
+    align-items: center;
+    align-content: center;
 }
 
 /* Tablet Views ******************************/
@@ -243,6 +245,17 @@ footer{
 
 /* Desktop Views ****************************/
 @media only screen and (min-width: 1200px) {
+	.social{
+		grid-area: hs;
+		display: flex;
+		margin: 20px;
+	}
+	.date{
+		grid-area: hd;
+		column-span: all;
+		text-align: center;
+		font-size: 16pt;
+	}
 	main {
 		display: grid;
 		grid-template-columns: 1fr 2fr 1fr;
@@ -252,10 +265,11 @@ footer{
 	"join news news spot";
 	}
 	nav {
-		margin: 0 auto	;
+		margin: 20 auto	;
+		width: 400px;
 		position: absolute;
-		top: 25px;
-		right: 5px;
+		top: 5px;
+		right: 50px;
 	}
 	main section {
 		height: 150px;
@@ -309,11 +323,36 @@ footer{
 	main section:nth-child(3) {
 		grid-column: span 1;
 	}
+	.info{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 5px;
+    }
+    .f1{
+        display: grid;
+        grid-template-columns: 20% 50% 30%;
+        grid-template-areas: 
+        "img addr cont"
+    }
+    .foot_img{
+        padding-top: 12%;
+    }
+    .logo{
+        height: 120px;
+        width: 120px;
+    }
 	footer{
 		width: 100%;
 		background-color: #3E5B4A;
 		color: white;
-		text-align: center;
-		justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "f1"
+        "fl"
+        "info";
+        text-align: center;
+        align-items: center;
+        align-content: center;
 	}
 }
