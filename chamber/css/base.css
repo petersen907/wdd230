@@ -78,24 +78,35 @@ main div {
 	padding: 0 1rem;
 	background-color: #eee;
 }
-
+main div section{
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: #E7D0A2;
+}
 .hero {
     grid-area: hero;
+	background: #E7D0A2;
 }
 .event {
     grid-area: event;
+	background: #E7D0A2;
 }
 .weather {
 	grid-area: weather;
+	background: #E7D0A2;
 }
 .news {
 	grid-area: news;
+	background: #E7D0A2;
 }
 .sections {
     grid-area: spot;
+	background: #3E5B4A;
 }
 .join {
     grid-area: join;
+	background: #E7D0A2;
 }
 .logo {
 	grid-area: logo;
@@ -181,9 +192,9 @@ footer{
 	width: 100%;
 	background-color: #3E5B4A;
 	color: white;
-     display: grid;
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
+    grid-template-areas:
     "f1"
     "fl"
     "info";
