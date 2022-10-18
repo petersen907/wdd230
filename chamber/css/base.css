@@ -88,25 +88,60 @@ main div section{
     grid-area: hero;
 	background: #E7D0A2;
 }
+.stats {
+	position: absolute;
+	top: 350px;
+	right: 625px;
+	width: 50px;
+	height: 50px;
+	background:#3E5B4A;
+	border: 1px solid rgba(0,0,0,.1);
+	padding: 1.5rem;
+	box-shadow: 0 0 30px #333;
+}
+.stats h2{
+	color: white;
+	text-justify: center;
+	margin: 0 0 0;
+}
 .event {
     grid-area: event;
 	background: #E7D0A2;
+}
+.event h2{
+	text-align: center;
 }
 .weather {
 	grid-area: weather;
 	background: #E7D0A2;
 }
+.weather h2{
+	text-align: center;
+}
 .news {
 	grid-area: news;
 	background: #E7D0A2;
+}
+.news h2{
+	text-align: center;
 }
 .sections {
     grid-area: spot;
 	background: #3E5B4A;
 }
+.sections h2{
+   text-align: center;
+}
 .join {
     grid-area: join;
 	background: #E7D0A2;
+}
+.join h2{
+	text-align: center;
+	color: white;
+}
+.joinbutton{
+	background-color: #3E5B4A;
 }
 .logo {
 	grid-area: logo;
@@ -147,6 +182,11 @@ main {
     height: 150px;
 	width: auto;
 	margin: 0.5rem;
+}
+.heroimg {
+	width: 100%;
+	margin-top: 0;
+	object-fit: fill;
 }
 .event {
     height: 150px;
@@ -228,6 +268,11 @@ footer{
 		padding: 0 1rem;
 		background-color: #eee;
 	}
+	.heroimg {
+		width: 100%;
+		margin-top: 0;
+		object-fit: cover;
+	}
 	.join {
 		display: grid;
 		height: 150px;
@@ -299,8 +344,12 @@ footer{
 		width: auto;
 		margin: 0.5rem;
 	}
+	.heroimg {
+		width: 100%;
+		margin-top: 0;
+		object-fit: fill;
+	}
 	.sections{
-		display: grid;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-column: span 4;
