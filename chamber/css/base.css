@@ -14,7 +14,7 @@ header {
 	margin: 0 auto;
     text-align: center;
     align-items: center;
-	justify-content: center;
+	justify-content:center;
 }
 header p:nth-child(1){
 display: none;
@@ -130,7 +130,7 @@ main div section{
 }
 .stats h2{
 	color: white;
-	text-justify: center;
+	text-align:center;
 	margin: 0 0 0;
 }
 .event {
@@ -358,7 +358,7 @@ footer{
 	}
 	.stats h2{
 		color: white;
-		text-justify: center;
+		text-align: center;
 		margin: 0 0 0;
 	}
 	.join {
@@ -479,7 +479,7 @@ footer{
 	}
 	.stats h2{
 		color: white;
-		text-justify: center;
+		text-align: center;
 		margin: 0 0 0;
 	}
 	.sections{
