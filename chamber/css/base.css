@@ -105,11 +105,20 @@ nav ul{
 nav a{
 	color: white;
 	padding: .5rem;
+	text-decoration: none;
 }
-
 nav ul.open{
 	display:block;
 }
+/* nav ul#navbar:active{
+	z-index: 100;
+	position: absolute;
+} */
+/* nav ul.navbar.open{
+	display:;
+	z-index: -50;
+	position: absolute;
+} */
 nav ul li.active a{
 	background-color: #3E5B4A;
 	color: white;
@@ -547,11 +556,11 @@ footer{
 		display:flex;
 		justify-content: center;
 		margin-left: 2vw;
-		border-left: 1px solid rgba(0, 0, 0, 0.3);
+		/* border-left: 1px solid rgba(0, 0, 0, 0.3); */
 	} 
 	nav ul li a{
 		border: none;
-		border-right: rgba(0, 0, 0, 0.3);
+		/* border-right: rgba(0, 0, 0, 0.3); */
 	}
 	main {
 		display: grid;
