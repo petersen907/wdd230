@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/base.css">
     <script src="js/chamber.js" defer></script>
+    <script src="js/windchill.js" defer></script>
     <link rel="shortcut icon" href="images/favicon.ico">
     <title>Meaningful title</title>
 </head>
@@ -24,7 +25,7 @@
             <nav>
                 <button id="hamburger"><span>&equiv;</span></button>
                 <ul id="navbar">
-                    <li class="active"><a href="#">Discover</a></li>
+                    <li class="active"><a href="discover.html">Discover</a></li>
                     <li ><a href="#">Directory</a></li>
                     <li ><a href="#">Join</a></li>
                     <li ><a href="#">Contact</a></li>
@@ -37,7 +38,9 @@
     <main>
     <div class="hero">
         <picture>
-            <img class="heroimg" src="images/placer.jpg" alt="miner image">
+            <source srcset="images/meeting-medium.WebP" media="(min-width: 500px) and (max-width: 1280px)">
+            <source srcset="images/meeting-small.WebP" media="(max-width: 450px)">
+            <img class="heroimg" src="images/meeting-large.WebP" alt="city council meeting">
         </picture>
         <section class="stats">
             <h2>Join the Chamber</h2>
@@ -48,14 +51,17 @@
         <p>Join us for the championship game to close out our football season!</p>
     </div>
     <div class="weather">
-        <h2>Weather</h2>
-        <h3>Partly Cloudy</h3>
-        <p>Temperature:<span id="temperature"></span>&deg; F</p>
-        <p>Wind Speed:<span id="windspeed"></span> mph</p>
-        <p>Wind Chill:<span id="windchill"></span></p>
+        <div class="weatherformat">
+            <h2 class="title">Weather</h2>
+            <img class="weatherimg" src="images//weather.jpg" alt="weather icon, partly Cloudy">
+            <h3 class="wtitle">Partly Cloudy</h3>
+            <p class="wtemp"><span id="temperature"></span>&deg;F</p>
+            <p class="wspeed">Wind Speed: <span id="windspeed"></span> mph</p>
+            <p class="wchill">Wind Chill: <span id="windchill"></span>F</p>
+        </div>
     </div>
     <div class="join">
-        <button class="joinbutton">Join Us!</button>
+        <button class="joinbutton"><p>Join Us!</p></button>
         <p>Discover how to join us!</p>
     </div>
     <div class="news" >
@@ -78,7 +84,7 @@
     </div>
     </main>
     <footer>
-        <div class="f1">
+        <div class="footersection1">
             <div class="foot_img"><img class="flogo" src="images/Goldnugget.jpg" alt="Berk's Chamber of Commerce Logo" ></div>
         
             <div class="address">
@@ -88,11 +94,11 @@
             </div>
             <div class="contact">
                 <p>GoldRushAlaska@Chamber.org</p>
-                <p>(907) 243-0009</p>
+                <p>(907) 243-0000</p>
                 <p><a href="https://goo.gl/maps/7bnWvhd7ot3ZSctQ6">Location Map</a></p>
             </div>
         </div>
-        <div class="fl"><hr></div>
+        <div class="footersection2"><hr></div>
         <div class="info">
             <div>&copy; <span></span> Gold Rush Chamber </div>
             <div>Joshua Petersen</div>
@@ -100,6 +106,5 @@
             <div id="datediv">Last Updated: <span id="lastupdatedate"></span></div>
         </div>
     </footer>
-    <script src="js/windchill.js"></script>
 </body>
 </html>

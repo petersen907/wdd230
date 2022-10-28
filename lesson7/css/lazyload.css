@@ -1,0 +1,26 @@
+
+body img{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+picture img{
+    display: block;
+    box-shadow: 15px;
+    filter: blur(0.0em);
+    transition: filter 3s;
+    width: 300px;
+    height: 400px;
+    margin: 5px;
+
+}
+.discover:hover {
+    filter: blur(0.1em);
+}
+
+    picture img[data-src]{
+        filter:blur(0.1em);
+        width: 300px;
+        height: 400px;
+    }

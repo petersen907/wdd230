@@ -19,6 +19,25 @@ header {
 header p:nth-child(1){
 display: none;
 }
+picture img{
+    display: block;
+    box-shadow: 15px;
+    filter: blur(0.0em);
+    transition: filter 3s;
+    width: 300px;
+    height: 400px;
+    margin: 5px;
+
+}
+.discover:hover {
+    filter: blur(0.1em);
+}
+
+    picture img[data-src]{
+        filter:blur(0.1em);
+        width: 300px;
+        height: 400px;
+    }
 .logo {
 	display: grid;
 	align-items: center;
@@ -64,12 +83,17 @@ display: none;
 button{
 	background-color: #E7D0A2;
 	padding: .5rem;
+	margin: 10px 0px;
 }
 nav {
-	margin: 10px auto;
+	/* margin: 5px auto;
     position: absolute;
-    top: 50px;
-    right: 5px;
+    top: 45px;
+    right: 2.5px; */
+	margin: 0 auto	;
+	position: absolute;
+	top: 10px;
+	right: 5px;
 }
 nav ul{
 	display:none;
@@ -99,13 +123,16 @@ main div {
 	margin: 0.5rem;
 	border: 1px solid #bbb;
 	padding: 0 1rem;
-	background-color: #eee;
+	background-color: #E7D0A2;
 }
 main div section{
 	margin: 0.5rem;
 	border: 1px solid #bbb;
 	padding: 0 1rem;
 	background-color: #E7D0A2;
+}
+main h2, h3, h4, h5{
+	text-align: center;
 }
 .hero {
     grid-area: hero;
@@ -117,7 +144,7 @@ main div section{
 }
 .heroimg {
 	width: 100%;
-	height: 100%;
+	/* height: 100%; */
 }
 .stats {
 	position: absolute;
@@ -143,6 +170,42 @@ main div section{
 .weather {
 	grid-area: weather;
 	background: #E7D0A2;
+}
+.weatherformat {
+	display: grid;
+	background: #E7D0A2;
+	border: none;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+"title title"
+"wimg wtemp"
+"wtitle wtitle"
+"wspeed wspeed"
+"wchill wchill";
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+.title{
+	grid-area: title;
+}
+.weatherimg{
+	grid-area: wimg;
+}
+.wtemp{
+	grid-area: wtemp;
+	font-size: 32px;
+	font-weight:bold;
+	margin-left: 25px;
+}
+.wtitle{
+	grid-area: wtitle;
+}
+.wspeed{
+	grid-area: wspeed;
+}
+.wchill{
+	grid-area: wchill;
 }
 .weather h2{
 	text-align: center;
@@ -182,10 +245,45 @@ main div section{
 	grid-area: headings;
 }
 #datediv{
-	grid-area: datediv;
-	display: grid;
+	/* grid-area: datediv;
+	display: grid; */
+}
+.info {
+    display: block;
+    /* text-align: center; */
+	/* align-items: center; */
+	/* align-content: center; */
+    grid-area: info;
 }
 
+/* image gallery css */
+div.gallery {
+	border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+	border: 1px solid #777;
+  }
+  
+  div.gallery img {
+	width: 100%;
+	height: auto;
+  }
+  
+  div.desc {
+	padding: 15px;
+	text-align: center;
+  }
+  
+  * {
+	box-sizing: border-box;
+  }
+  
+  .responsive {
+	padding: 0 6px;
+	float: left;
+	width: 100%;
+  }
 
 
 /* phone or baseline views **************************/
@@ -204,8 +302,8 @@ header h2{
 	font-size: 12pt;
 }
 main {
-	width: 100%;
-	max-width: 1024px;
+	/* width: 100%; */
+	/* max-width: 1024px; */
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -224,28 +322,28 @@ main {
 	width: auto;
 }
 .hero {
-    height: 150px;
-	width: auto;
+    /* height: 150px;
+	width: auto; */
 	margin: 0.5rem;
 }
 .heroimg {
-	width: 100%;
+	/* width: 100%; */
 	margin-top: 0;
 	object-fit: fill;
 }
 .event {
-    height: 150px;
-	width: auto;
+    /* height: 150px;
+	width: auto; */
 	margin: 0.5rem;
 }
 .weather {
-	height: 150px;
-	width: auto;
+	/* height: 150px;
+	width: auto; */
 	margin: 0.5rem;
 }
 .news {
-	height: 150px;
-	width: auto;
+	/* height: 150px;
+	width: auto; */
 	margin: 0.5rem;
 }
 .join {
@@ -260,8 +358,8 @@ main section h2 {
 }
 
 main section {
-	height: 150px;
-	width: auto;
+	/* height: 150px;
+	width: auto; */
 	margin: 0.5rem;
 	border: 1px solid #bbb;
 	padding: 0 1rem;
@@ -273,20 +371,26 @@ main section:nth-child(2) {
 	margin: 0.5rem;
     grid-column: span 1;
 }
+
+.contact a{
+	text-decoration: none;
+	color: white;
+}
 footer{
-	width: 100%;
+	/* width: 100%; */
 	background-color: #3E5B4A;
 	color: white;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
     "f1"
-    "fl"
+    "f2"
     "info";
     text-align: center;
     align-items: center;
     align-content: center;
 }
+
 
 /* Tablet Views ******************************/
 @media only screen and (min-width: 600px) {
@@ -331,8 +435,8 @@ footer{
 	"event event event weather";
 	}
 	main section {
-		height: 150px;
-		width: auto;
+		/* height: 150px;
+		width: auto; */
 		margin: 0.5rem;
 		border: 1px solid #bbb;
 		padding: 0 1rem;
@@ -348,7 +452,7 @@ footer{
 	}
 	.heroimg {
 		width: 100%;
-		height: 100%;
+		/* height: 100%; */
 	}
 	.stats {
 		top: 20px;
@@ -363,8 +467,8 @@ footer{
 	}
 	.join {
 		display: grid;
-		height: 150px;
-		width: auto;
+		/* height: 150px;
+		width: auto; */
 	}
 	.sections{
 		display: grid;
@@ -382,6 +486,10 @@ footer{
         display: none;
 		grid-column: span 2;
 	}
+	.responsive {
+		width: 100%;
+		margin: 6px 0;
+	  }
 	footer{
 		width: 100%;
 		background-color: #3E5B4A;
@@ -392,7 +500,7 @@ footer{
 }
 
 /* Desktop Views ****************************/
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1280px) {
 	header{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
@@ -454,8 +562,8 @@ footer{
 	"join news news spot";
 	}
 	main section {
-		height: 150px;
-		width: 150px;
+		/* height: 150px;
+		width: 150px; */
 		margin: 0.5rem;
 		border: 1px solid #bbb;
 		padding: 0 1rem;
@@ -493,16 +601,20 @@ footer{
 	}
 	.join {
 		display: grid;
-		height: 150px;
-		width: 150px;
+		/* height: 150px;
+		width: 150px; */
+	}
+	.joinbutton p{
+		font-size: 16pt;
+		color: white;
 	}
 	.event {
-		height: 150px;
-		width: 150px;
+		/* height: 150px;
+		width: 150px; */
 	}
 	.weather {
-		height: 150px;
-		width: 150px;
+		/* height: 150px;
+		width: 150px; */
 	}
 	main section:nth-child(3) {
 		grid-column: span 1;
@@ -512,7 +624,7 @@ footer{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         margin: 5px;
     }
-    .f1{
+    .footersection1{
         display: grid;
         grid-template-columns: 20% 50% 30%;
         grid-template-areas: 
@@ -525,6 +637,9 @@ footer{
         height: 120px;
         width: 120px;
     }
+	.responsive {
+		width: 100%;
+	  }
 	footer{
 		width: 100%;
 		background-color: #3E5B4A;
@@ -533,7 +648,7 @@ footer{
         grid-template-columns: 1fr;
         grid-template-areas: 
         "f1"
-        "fl"
+        "f2"
         "info";
         text-align: center;
         align-items: center;
