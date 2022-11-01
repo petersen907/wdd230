@@ -21,7 +21,7 @@ display: none;
 }
 picture img{
     display: block;
-    box-shadow: 15px;
+    /* box-shadow: 15px; */
     filter: blur(0.0em);
     transition: filter 3s;
     width: 300px;
