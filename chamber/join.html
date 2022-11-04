@@ -25,10 +25,10 @@
             <nav>
                 <button id="hamburger"><span>&equiv;</span></button>
                 <ul id="navbar">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li ><a href="index.html">Home</a></li>
                     <li ><a href="discover.html">Discover</a></li>
                     <li ><a href="#">Directory</a></li>
-                    <li ><a href="join.html">Join</a></li>
+                    <li class="active"><a href="join.html">Join</a></li>
                     <li ><a href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -37,52 +37,34 @@
         </div>
     </header>
     <main>
-    <div class="hero">
-        <picture>
-            <source srcset="images/meeting-medium.WebP" media="(min-width: 500px) and (max-width: 1280px)">
-            <source srcset="images/meeting-small.WebP" media="(max-width: 450px)">
-            <img class="heroimg" src="images/meeting-large.WebP" alt="city council meeting">
-        </picture>
-        <section class="stats">
-            <h2>Join the Chamber</h2>
-        </section>
-    </div>
-    <div class="event">
-        <h2>Football Game</h2>
-        <p>Join us for the championship game to close out our football season!</p>
-    </div>
-    <div class="weather">
-        <div class="weatherformat">
-            <h2 class="title">Weather</h2>
-            <img class="weatherimg" src="images//weather.jpg" alt="weather icon, partly Cloudy">
-            <h3 class="wtitle">Partly Cloudy</h3>
-            <p class="wtemp"><span id="temperature"></span>&deg;F</p>
-            <p class="wspeed">Wind Speed: <span id="windspeed"></span> mph</p>
-            <p class="wchill">Wind Chill: <span id="windchill"></span>F</p>
-        </div>
-    </div>
-    <div class="join">
-        <button class="joinbutton"><p>Join Us!</p></button>
-        <p>Discover how to join us!</p>
-    </div>
-    <div class="news" >
-        <h2>News Release</h2>
-        <p>New builings for lease in town. Start your buisness today!</p>
-    </div>
-    <div class="sections">
         <section>
-            <h2>Artic Lawn Care</h2>
-            <p>Call now for a free consultation on your property for summer maintenance and spring cleanups.</p>
+            <div>
+                <form action="thankyou.html" method="GET">
+                    <label class="myinput">First Name*<input type="text" name="fname" placeholder="John" required></label>
+                    <label class="myinput">Last Name*<input type="text" name="lname" placeholder="Doe" required></label>
+                    <label class="myinput">Title<input type="text" name="title" pattern="[A-Za-z -]{7,}"></label>
+                    <label class="myinput">Email*<input type="email" name="email" required></label>
+                    <label class="myinput">Cell Phone*<input type="tel" name="cellphone" required></label>
+                    <label class="myinput">Business Name*<input type="text" name="bizname" required></label>
+                    <h3>Membership Level</h3>
+                    <label class="myradio"><input type="radio" name="level" value="nonprofit">Non-Profit</label>
+                    <label class="myradio"><input type="radio" name="level" value="bronze">Bronze</label>
+                    <label class="myradio"><input type="radio" name="level" value="silver">Silver</label>
+                    <label class="myradio"><input type="radio" name="level" value="gold">Gold</label>
+                    <label>Business Description<textarea name="description" cols="40" rows="5"></textarea></label>
+                    <label><input id="currentdate" type="hidden" name="currentdate" value=""></label>
+                    <input class="mysubmit" type="submit" value="Join the Chamber!" >
+                </form>
+            </div>
+            <div>
+                <h2>Membership Level Benefits</h2>
+                <h3>NP Membership</h3>
+                <ul>
+                    <li>For non profit organizations and there is </li>
+                </ul>
+
+            </div>
         </section>
-        <section>
-            <h2>Bakery Sell</h2>
-            <p>Bakery sell this weekend from 5pm-7pm Friday and Saturday at the cultural hall.</p>
-        </section>
-        <section id="spot3">
-            <h2>Community Service</h2>
-            <p>New service oppurtunity on just serve.org</p>
-        </section>
-    </div>
     </main>
     <footer>
         <div class="footersection1">

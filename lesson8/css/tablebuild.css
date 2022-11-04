@@ -1,0 +1,33 @@
+body{
+    font-family: Ubuntu;
+    text-align: center;
+}
+caption{
+    background-color: #0a4c6e;
+}
+tbody tr:nth-child(1){
+    background-color: #3E5B4A;
+}
+tbody tr:nth-child(2){
+    background-color: white;
+}
+tbody tr:nth-child(even){
+    background-color: #3E5B4A;
+    color: white;
+}
+tbody tr:nth-child(odd){
+    background-color:#E7D0A2;
+}
+table{
+    border-collapse: collapse;
+}
+thead{
+    background-color: #477991;
+    color: white;
+}
+tfoot{
+    background-color: #0a4c6e;
+}
+.nov2{
+    background-color: #477991;
+}
