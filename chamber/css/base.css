@@ -323,6 +323,9 @@ label.myradio input{
 label.myinput input:required{
 	border-color: red;
 }
+.seccolor{
+	background-color: #3E5B4A;
+}
 
 
 /* phone or baseline views **************************/
