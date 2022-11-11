@@ -1,0 +1,16 @@
+.cards section h2{
+    color: blue;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 5rem;
+    border-color: black;
+}
+.cards section:hover {
+    border: 1px solid black;
+}
+
+.cards section{
+    /* margin: 10px; */
+}   

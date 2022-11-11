@@ -1,0 +1,28 @@
+{
+    "businesses" : [
+        {
+            "imageURL" : "images/placeholder.jpg",
+            "street" : "2115 S Visa Avenue",
+            "citystatezip" : "Boise, ID ",
+            "websiteURL" : "facebook.com",
+            "phone" : "(208) 234-2900",
+            "name" : "Random Business"
+        },
+        {
+            "imageURL" : "images/your-logo-here.png",
+            "street" : "2115 S Visa Avenue",
+            "citystatezip" : "Boise, ID ",
+            "websiteURL" : "facebook.com",
+            "phone" : "(208) 234-2900",
+            "name" : "Random Business"
+        },
+        {
+            "imageURL" : "images/your-logo-here.png",
+            "street" : "2115 S Visa Avenue",
+            "citystatezip" : "Boise, ID ",
+            "websiteURL" : "facebook.com",
+            "phone" : "(208) 234-2900",
+            "name" : "Random Business"
+        }
+    ]
+}

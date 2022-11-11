@@ -323,10 +323,24 @@ label.myradio input{
 label.myinput input:required{
 	border-color: red;
 }
-.seccolor{
+.formdiv1{
+	grid-area: div1;
+}
+.formdiv2{
+	grid-area: div2;
+}
+.formsec{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	"div1 div2";
 	background-color: #3E5B4A;
 }
 
+/* Toggle View for Directory page data */
+#listview{
+	display: none;
+}
 
 /* phone or baseline views **************************/
 header{
