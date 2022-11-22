@@ -625,7 +625,7 @@ footer{
 		padding: 0 1rem;
 		background-color: #eee;
 	}
-	
+
 	/* This is for Directory main sections */
 	section#bizheader{
 		text-align: center;
@@ -635,6 +635,15 @@ footer{
 	section#bizheader img{
 		width: 50px;
 	}
+	section#cardview{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	section#cardview img{
+		width: 160px;
+		height: 90px;
+	}
+
 	.hero {
 		grid-area: hero;
     	position: relative;
