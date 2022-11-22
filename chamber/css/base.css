@@ -609,7 +609,7 @@ footer{
 		border: none;
 		/* border-right: rgba(0, 0, 0, 0.3); */
 	}
-	main {
+	main.indexmain {
 		display: grid;
 		grid-template-columns: 1fr 2fr 1fr;
 		grid-template-areas: 
@@ -624,6 +624,16 @@ footer{
 		border: 1px solid #bbb;
 		padding: 0 1rem;
 		background-color: #eee;
+	}
+	
+	/* This is for Directory main sections */
+	section#bizheader{
+		text-align: center;
+		font-size: .5cm;
+		background-color: #E7D0A2;
+	}
+	section#bizheader img{
+		width: 50px;
 	}
 	.hero {
 		grid-area: hero;

@@ -18,10 +18,23 @@ listselector.addEventListener('click', ()=>{
     listselector.style.opacity=1.0;
 });
 
+const requestURL = "./data/data.json";
+    fetch(requestURL)
+        .then((response) => {
+        return response.json();
+    })
+        .then((jsonObject) => {
+        console.table(jsonObject);  // temporary checking for valid response and data parsing
+        const bizlist = jsonObject["businesses"];
+        bizlist.forEach(displayCard);
+        bizlist.forEach(displayList);
+     });
+
 function displayCard(card){
     let cardview = document.querySelector("#cardview");
     let cardelt = document.querySelector("div");
-    cardelt.innerHTML=`<img src="${card.imageURL}">
+    cardelt.innerHTML=
+       `<img src="${card.imageURL}">
         <p>${card.street} ${card.citystatezip}</p>
         <p>${card.phone}</p>
         <p><a href="${card.websiteURL}">${card.websiteURL}</a></p>`;
@@ -30,23 +43,10 @@ function displayCard(card){
 function displayList(list){
     // let listview = document.querySelector("#listview");
     let listelt = document.querySelector("tr");
-    listelt.innerHTML=`
-        <td>${list.name}</td>
+    listelt.innerHTML=
+       `<td>${list.name}</td>
         <td>${list.street} ${list.citystatezip}</td>
         <td>${list.phone}</td>
         <td><a href=${list.websiteURL}>${list.websiteURL}</td>`;
     document.querySelector("#listview table").appendChild(listelt);
 };
-
-const requestURL = "./data/directory.json";
-
-fetch(requestURL)
-  .then((response) => {
-    return response.json();
-  })
-  .then((jsonObject) => {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const bizlist = jsonObject["businesses"];
-    bizlist.forEach(displayCard);
-    bizlist.forEach(displayList);
-  });
