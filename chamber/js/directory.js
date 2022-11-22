@@ -1,3 +1,4 @@
+
 let cardselector = document.querySelector("#cardselect");
 let listselector = document.querySelector("#listselect");
 let cardview = document.querySelector("#cardview");
