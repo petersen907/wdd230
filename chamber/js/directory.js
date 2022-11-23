@@ -42,7 +42,7 @@ function displayCard(card){
 };
 function displayList(list){
     // let listview = document.querySelector("#listview");
-    let listelt = document.querySelector("tr");
+    let listelt = document.createElement("tr");
     listelt.innerHTML=
        `<td>${list.name}</td>
         <td>${list.street} ${list.citystatezip}</td>

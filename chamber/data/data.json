@@ -23,6 +23,78 @@
             "websiteURL" : "chickfila.com",
             "phone" : "(208) 234-2700",
             "name" : "Chick fil A"
+        },
+        {
+            "imageURL" : "images/walmartlogo.webp",
+            "street" : "2115 S Visa Avenue",
+            "citystatezip" : "Boise, ID ",
+            "websiteURL" : "walmart.com",
+            "phone" : "(208) 234-2900",
+            "name" : "Walmart"
+        },
+        {
+            "imageURL" : "images/costcologo.webp",
+            "street" : "2115 S Visa Avenue",
+            "citystatezip" : "Boise, ID ",
+            "websiteURL" : "costco.com",
+            "phone" : "(208) 234-2200",
+            "name" : "Costco"
+        },
+        {
+            "imageURL" : "images/chickfilalogo.webp",
+            "street" : "2115 S Visa Avenue",
+            "citystatezip" : "Boise, ID ",
+            "websiteURL" : "chickfila.com",
+            "phone" : "(208) 234-2700",
+            "name" : "Chick fil A"
+        },
+        {
+            "imageURL" : "images/walmartlogo.webp",
+            "street" : "2115 S Visa Avenue",
+            "citystatezip" : "Boise, ID ",
+            "websiteURL" : "walmart.com",
+            "phone" : "(208) 234-2900",
+            "name" : "Walmart"
+        },
+        {
+            "imageURL" : "images/costcologo.webp",
+            "street" : "2115 S Visa Avenue",
+            "citystatezip" : "Boise, ID ",
+            "websiteURL" : "costco.com",
+            "phone" : "(208) 234-2200",
+            "name" : "Costco"
+        },
+        {
+            "imageURL" : "images/chickfilalogo.webp",
+            "street" : "2115 S Visa Avenue",
+            "citystatezip" : "Boise, ID ",
+            "websiteURL" : "chickfila.com",
+            "phone" : "(208) 234-2700",
+            "name" : "Chick fil A"
+        },
+        {
+            "imageURL" : "images/walmartlogo.webp",
+            "street" : "2115 S Visa Avenue",
+            "citystatezip" : "Boise, ID ",
+            "websiteURL" : "walmart.com",
+            "phone" : "(208) 234-2900",
+            "name" : "Walmart"
+        },
+        {
+            "imageURL" : "images/costcologo.webp",
+            "street" : "2115 S Visa Avenue",
+            "citystatezip" : "Boise, ID ",
+            "websiteURL" : "costco.com",
+            "phone" : "(208) 234-2200",
+            "name" : "Costco"
+        },
+        {
+            "imageURL" : "images/chickfilalogo.webp",
+            "street" : "2115 S Visa Avenue",
+            "citystatezip" : "Boise, ID ",
+            "websiteURL" : "chickfila.com",
+            "phone" : "(208) 234-2700",
+            "name" : "Chick fil A"
         }
     ]
 }

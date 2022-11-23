@@ -128,19 +128,19 @@ nav ul li a:hover{
 	color: black;
 }
 
-main div {
+main.indexmain div {
 	margin: 0.5rem;
 	border: 1px solid #bbb;
 	padding: 0 1rem;
 	background-color: #E7D0A2;
 }
-main div section{
+main.indexmain div section{
 	margin: 0.5rem;
 	border: 1px solid #bbb;
 	padding: 0 1rem;
 	background-color: #E7D0A2;
 }
-main h2, h3, h4, h5{
+main.indexmain h2, h3, h4, h5{
 	text-align: center;
 }
 .hero {
@@ -357,7 +357,7 @@ justify-content: center;
 header h2{
 	font-size: 12pt;
 }
-main {
+main.indexmain {
 	/* width: 100%; */
 	/* max-width: 1024px; */
 	margin: 0 auto;
@@ -409,11 +409,11 @@ main {
 	display: none;
 }
 
-main section h2 {
+main.indexmain section h2 {
 	color: #536878;
 }
 
-main section {
+main.indexmain section {
 	/* height: 150px;
 	width: auto; */
 	margin: 0.5rem;
@@ -422,7 +422,7 @@ main section {
 	background-color: #eee;
 }
 
-main section:nth-child(2) {
+main.indexmain section:nth-child(2) {
 	display: block;
 	margin: 0.5rem;
     grid-column: span 1;
@@ -481,7 +481,7 @@ footer{
 		top: 10px;
 		right: 5px;
 	}
-	main {
+	main.indexmain {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-areas:  
 	"hero hero hero hero"
@@ -490,7 +490,7 @@ footer{
 	"join join join join"
 	"event event event weather";
 	}
-	main section {
+	main.indexmain section {
 		/* height: 150px;
 		width: auto; */
 		margin: 0.5rem;
@@ -533,12 +533,12 @@ footer{
 		width: auto;
 	}
 
-	main section:nth-child(2) {
+	main.indexmain section:nth-child(2) {
 		display: block;
 		grid-column: span 2;
 	}	
 
-	main section:nth-child(3) {
+	main.indexmain section:nth-child(3) {
         display: none;
 		grid-column: span 2;
 	}
@@ -627,19 +627,19 @@ footer{
 	}
 
 	/* This is for Directory main sections */
-	section#bizheader{
+	#bizheader{
 		text-align: center;
 		font-size: .5cm;
 		background-color: #E7D0A2;
 	}
-	section#bizheader img{
+	#bizheader img{
 		width: 50px;
 	}
-	section#cardview{
+	#cardview{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-	section#cardview img{
+	#cardview img{
 		width: 160px;
 		height: 90px;
 	}
@@ -691,7 +691,7 @@ footer{
 		/* height: 150px;
 		width: 150px; */
 	}
-	main section:nth-child(3) {
+	main.indexmain section:nth-child(3) {
 		grid-column: span 1;
 	}
 	.info{
