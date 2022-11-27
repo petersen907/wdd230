@@ -1,7 +1,7 @@
 
 function setwindchill(temp, windspeed){
 // References to DOM elements
-let tempobj = document.querySelector("#temperature");
+let tempobj = document.querySelector("#current-temp");
 let windspeedobj = document.querySelector("#windspeed");
 let windchillobj = document.querySelector("#windchill");
 
@@ -19,4 +19,4 @@ windspeedobj.textContent = windspeed;
 windchillobj.innerHTML = windchillmsg;
 }
 
-setwindchill(39, 10);
+// setwindchill(39, 10);

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/base.css">
     <script src="js/chamber.js" defer></script>
     <script src="js/windchill.js" defer></script>
+    <script src="js/weatherapi.js" defer></script>
     <link rel="shortcut icon" href="images/favicon.ico">
     <title>Gold Rush of Alaska</title>
 </head>
@@ -39,9 +40,9 @@
     <main class="indexmain">
     <div class="hero">
         <picture>
-            <source srcset="images/meeting-medium.WebP" media="(min-width: 500px) and (max-width: 1280px)">
-            <source srcset="images/meeting-small.WebP" media="(max-width: 450px)">
-            <img class="heroimg" src="images/placer.jpg" alt="city council meeting">
+            <source srcset="images/placer.jpg" media="(min-width: 500px) and (max-width: 1280px)">
+            <source srcset="images/placer.jpg" media="(max-width: 450px)">
+            <img class="heroimg" src="images/placer.jpg" alt="goldminer with dog">
         </picture>
         <section class="stats">
             <h2>Join the Chamber</h2>
@@ -54,11 +55,11 @@
     <div class="weather">
         <div class="weatherformat">
             <h2 class="title">Weather</h2>
-            <img class="weatherimg" src="images//weather.jpg" alt="weather icon, partly Cloudy">
+            <img class="weatherimg" src="" alt="weather icon" id="weathericon">
             <h3 class="wtitle">Partly Cloudy</h3>
-            <p class="wtemp"><span id="temperature"></span>&deg;F</p>
+            <p class="wtemp"><span id="current-temp"></span>&deg;F</p>
             <p class="wspeed">Wind Speed: <span id="windspeed"></span> mph</p>
-            <p class="wchill">Wind Chill: <span id="windchill"></span>F</p>
+            <p class="wchill">Wind Chill: <span id="windchill"></span>N/A</p>
         </div>
     </div>
     <div class="join">

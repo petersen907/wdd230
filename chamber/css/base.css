@@ -38,12 +38,12 @@ picture img[data-src]{
     width: 300px;
     height: 400px;
     }
-.logo {
+#logo {
 	display: grid;
 	align-items: center;
 	margin-left: 1rem;
 }
-.logo img {
+#logo img {
 	width: 80px;
 	height: auto;
 }
@@ -130,9 +130,8 @@ nav ul li a:hover{
 
 main.indexmain div {
 	margin: 0.5rem;
-	border: 1px solid #bbb;
+	/* border: 1px solid #bbb; */
 	padding: 0 1rem;
-	background-color: #E7D0A2;
 }
 main.indexmain div section{
 	margin: 0.5rem;
@@ -157,7 +156,7 @@ main.indexmain h2, h3, h4, h5{
 }
 .stats {
 	position: absolute;
-	background:#3E5B4A;
+	background-color: #3E5B4A;
 	top: 20px;
     right: 25px;
 	width: 75px;
@@ -178,7 +177,7 @@ main.indexmain h2, h3, h4, h5{
 }
 .weather {
 	grid-area: weather;
-	background: #E7D0A2;
+	background-color: #3E5B4A;
 }
 .weatherformat {
 	display: grid;
@@ -284,15 +283,42 @@ div.gallery {
 	text-align: center;
   }
   
-  * {
+  /* * {
 	box-sizing: border-box;
-  }
+  } */
   
   .responsive {
 	padding: 0 6px;
 	float: left;
 	width: 100%;
   }
+
+  /* This is for Directory main sections */
+	#bizheader{
+		text-align: center;
+		font-size: .5cm;
+		background-color: #E7D0A2;
+	}
+	#bizheader img{
+		width: 50px;
+	}
+	#cardview{
+		display: flex;
+		background-color: white;
+		grid-template-columns: 1fr;
+		text-align: center;
+		row-gap: 20px;
+		border: 5rem;
+    	border-color: black;
+	}
+	#cardview img{
+		width: 160px;
+		height: 90px;
+	}
+	#listview tr:nth-child(odd){
+		background-color: #E7D0A2;
+		color: black;
+	}
 
 /* My form styling */
 label.myinput{
@@ -334,12 +360,35 @@ label.myinput input:required{
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas:
 	"div1 div2";
-	background-color: #3E5B4A;
+	background-color: #E7D0A2;
 }
 
 /* Toggle View for Directory page data */
 #listview{
 	display: none;
+}
+#listview{
+	background-color: white;
+	color: #292c3b;
+	display: none;
+}
+#listview table {
+	border-collapse: collapse;
+	font-size: 15pt;
+	width: 100%;
+	box-shadow: 4px 4px 7px black;
+}
+#listview table tr td{
+	padding: 10px;
+	display: flex;	
+	text-decoration: none;
+	color: black;
+	border: .25px solid white;
+	border-radius: .5px;
+}
+#listview tr:nth-child(odd){
+	background-color: #E7D0A2;
+	color: black;
 }
 
 /* phone or baseline views **************************/
@@ -376,6 +425,7 @@ main.indexmain {
 	grid-template-columns: 1fr;
 	grid-column: span 2;
 	width: auto;
+	background-color: #3E5B4A;
 }
 .hero {
     /* height: 150px;
@@ -385,7 +435,7 @@ main.indexmain {
 .heroimg {
 	/* width: 100%; */
 	margin-top: 0;
-	object-fit: fill;
+	object-fit: cover;
 }
 .event {
     /* height: 150px;
@@ -410,7 +460,7 @@ main.indexmain {
 }
 
 main.indexmain section h2 {
-	color: #536878;
+	color: black;
 }
 
 main.indexmain section {
@@ -625,25 +675,10 @@ footer{
 		padding: 0 1rem;
 		background-color: #eee;
 	}
-
-	/* This is for Directory main sections */
-	#bizheader{
-		text-align: center;
-		font-size: .5cm;
-		background-color: #E7D0A2;
-	}
-	#bizheader img{
-		width: 50px;
-	}
+	/* This is the directory page section */
 	#cardview{
-		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-	#cardview img{
-		width: 160px;
-		height: 90px;
-	}
-
 	.hero {
 		grid-area: hero;
     	position: relative;
@@ -712,6 +747,9 @@ footer{
         height: 120px;
         width: 120px;
     }
+	#listview table tr td {
+		display: revert;
+	}
 	.responsive {
 		width: 100%;
 	  }
