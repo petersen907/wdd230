@@ -40,32 +40,8 @@ fetch(apiURL)
         let chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
         windchillmsg = `${chill}&deg;`;
     }
-  }
-    // setwindchill(39, 10);
-
-
-
-
-
-    fetch(apiURL)
-    .then((response) => response.json())
-    .then((jsObject) => {
-        console.log(jsObject);
-        const temp = jsObject.main.temp;
-        const iconsrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`
-        const weatherId = jsObject.weather[0].id;
-        const wind = Math.round(jsObject.wind.speed);
-        let chill = 'N/A';
-
-        //document.querySelector('#city-temp').textContent = name;
-        document.querySelector('#wind').textContent = wind;
-        document.querySelector('#current-temp').textContent = temp.toFixed(1);
-
-        if(temp <= 50 && wind > 3)
-        {
-            chill = calcWindChill(wind, temp);
-            document.querySelector('#chill').innerHTML = `${chill}&#8457;`;
-        }
+  
+    setwindchill(39, 10);
 
         if (weatherId >= 200 && weatherId < 531)
         {
@@ -100,6 +76,4 @@ fetch(apiURL)
         else
         {
             document.querySelector('#weathericon').setAttribute('src', iconsrc);
-        }
-        
-    });
+        }};

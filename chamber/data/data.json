@@ -3,98 +3,98 @@
         {
             "imageURL" : "images/walmartlogo.webp",
             "street" : "2115 S Visa Avenue",
-            "citystatezip" : "Boise, ID ",
+            "citystatezip" : "Rexburg, ID ",
             "websiteURL" : "walmart.com",
             "phone" : "(208) 234-2900",
             "name" : "Walmart"
         },
         {
             "imageURL" : "images/costcologo.webp",
-            "street" : "2115 S Visa Avenue",
-            "citystatezip" : "Boise, ID ",
+            "street" : "365 grandma dr",
+            "citystatezip" : "Pocatello, ID ",
             "websiteURL" : "costco.com",
-            "phone" : "(208) 234-2200",
+            "phone" : "(208) 397-9230",
             "name" : "Costco"
         },
         {
             "imageURL" : "images/chickfilalogo.webp",
-            "street" : "2115 S Visa Avenue",
-            "citystatezip" : "Boise, ID ",
+            "street" : "293 chicken way",
+            "citystatezip" : "Ammon, ID ",
             "websiteURL" : "chickfila.com",
-            "phone" : "(208) 234-2700",
+            "phone" : "(208) 384-4387",
             "name" : "Chick fil A"
         },
         {
             "imageURL" : "images/walmartlogo.webp",
-            "street" : "2115 S Visa Avenue",
-            "citystatezip" : "Boise, ID ",
-            "websiteURL" : "walmart.com",
-            "phone" : "(208) 234-2900",
-            "name" : "Walmart"
+            "street" : "2938 hungry st",
+            "citystatezip" : "Provo, UT ",
+            "websiteURL" : "caferio.com",
+            "phone" : "(901) 867-5309",
+            "name" : "Cafe Rio" 
         },
         {
             "imageURL" : "images/costcologo.webp",
-            "street" : "2115 S Visa Avenue",
-            "citystatezip" : "Boise, ID ",
-            "websiteURL" : "costco.com",
-            "phone" : "(208) 234-2200",
-            "name" : "Costco"
+            "street" : "5987 wraps way",
+            "citystatezip" : "Idaho Falls, ID ",
+            "websiteURL" : "costavida.com",
+            "phone" : "(602) 410-8246",
+            "name" : "Costa Vida"
         },
         {
             "imageURL" : "images/chickfilalogo.webp",
-            "street" : "2115 S Visa Avenue",
-            "citystatezip" : "Boise, ID ",
-            "websiteURL" : "chickfila.com",
-            "phone" : "(208) 234-2700",
-            "name" : "Chick fil A"
+            "street" : "4332 Burger Dr",
+            "citystatezip" : "Rexburg, ID ",
+            "websiteURL" : "mcdonalds.com",
+            "phone" : "(704) 432-9900",
+            "name" : "McDonalds"
         },
         {
             "imageURL" : "images/walmartlogo.webp",
-            "street" : "2115 S Visa Avenue",
-            "citystatezip" : "Boise, ID ",
-            "websiteURL" : "walmart.com",
-            "phone" : "(208) 234-2900",
-            "name" : "Walmart"
+            "street" : "3242 corner way",
+            "citystatezip" : "Tacoma, WA ",
+            "websiteURL" : "wendys.com",
+            "phone" : "(802) 325-0958",
+            "name" : "Wendys"
         },
         {
             "imageURL" : "images/costcologo.webp",
-            "street" : "2115 S Visa Avenue",
-            "citystatezip" : "Boise, ID ",
-            "websiteURL" : "costco.com",
+            "street" : "6372 archery lane",
+            "citystatezip" : "Anchorage, AK ",
+            "websiteURL" : "target.com",
             "phone" : "(208) 234-2200",
-            "name" : "Costco"
+            "name" : "Target"
         },
         {
             "imageURL" : "images/chickfilalogo.webp",
-            "street" : "2115 S Visa Avenue",
-            "citystatezip" : "Boise, ID ",
+            "street" : "3748 thirsty Dr",
+            "citystatezip" : "Laveen, AZ ",
             "websiteURL" : "chickfila.com",
             "phone" : "(208) 234-2700",
-            "name" : "Chick fil A"
+            "name" : "Soda Jerk"
         },
         {
             "imageURL" : "images/walmartlogo.webp",
-            "street" : "2115 S Visa Avenue",
+            "street" : "907 Sourdough Dr",
             "citystatezip" : "Boise, ID ",
-            "websiteURL" : "walmart.com",
-            "phone" : "(208) 234-2900",
-            "name" : "Walmart"
+            "websiteURL" : "bakeshop.com",
+            "phone" : "(907) 674-3947",
+            "name" : "Bake Shop"
         },
         {
             "imageURL" : "images/costcologo.webp",
-            "street" : "2115 S Visa Avenue",
-            "citystatezip" : "Boise, ID ",
-            "websiteURL" : "costco.com",
-            "phone" : "(208) 234-2200",
-            "name" : "Costco"
+            "street" : "10400 NE 4th St Unit 2800",
+            "citystatezip" : "Seattle, WA ",
+            "websiteURL" : "pokemon.com",
+            "phone" : "(425) 222-1970",
+            "name" : "The Pokemon Company"
         },
         {
             "imageURL" : "images/chickfilalogo.webp",
-            "street" : "2115 S Visa Avenue",
-            "citystatezip" : "Boise, ID ",
-            "websiteURL" : "chickfila.com",
-            "phone" : "(208) 234-2700",
-            "name" : "Chick fil A"
+            "street" : "600 Handcart Ln",
+            "citystatezip" : "Rexburg, ID ",
+            "websiteURL" : "dairy.com",
+            "phone" : "(208) 359-5443",
+            "name" : "G's Dairy"
         }
     ]
 }

@@ -263,7 +263,13 @@ justify-content: center;
 	/* align-content: center; */
     grid-area: info;
 }
-
+.headerdivdiscovery{
+	padding: 1px;
+	background-color: #E7D0A2;
+}
+h2.headerdiscovery{
+ text-align: center;
+}
 /* image gallery css */
 div.gallery {
 	border: 1px solid #ccc;
@@ -274,13 +280,15 @@ div.gallery {
   }
   
   div.gallery img {
-	width: 100%;
+	width: 50%;
+	margin: auto;
 	height: auto;
   }
   
   div.desc {
 	padding: 15px;
 	text-align: center;
+	background-color: #E7D0A2;
   }
   
   /* * {
@@ -351,6 +359,7 @@ label.myinput input:required{
 }
 .formdiv1{
 	grid-area: div1;
+	padding: 25px;
 }
 .formdiv2{
 	grid-area: div2;
@@ -362,7 +371,25 @@ label.myinput input:required{
 	"div1 div2";
 	background-color: #E7D0A2;
 }
-
+.formseccon{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	"div1 div2";
+	background-color: #E7D0A2;
+}
+.formdiv1con{
+	grid-area: div1;
+	padding: 50px;
+}
+.formdiv2con{
+	grid-area: div2;
+	padding-top: 100px;
+}
+.contactstyle{
+	background-color: #E7D0A2;
+	text-align: center;
+}
 /* Toggle View for Directory page data */
 #listview{
 	display: none;
@@ -458,6 +485,7 @@ main.indexmain {
 #spot3{
 	display: none;
 }
+
 
 main.indexmain section h2 {
 	color: black;

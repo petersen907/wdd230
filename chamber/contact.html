@@ -35,10 +35,20 @@
         </div>
     </header>
     <main>
-        <div>
-            <h1>Contact Us!</h1>
-            <div></div>
-        </div>
+         <section class="formseccon">
+            <div class="formdiv1con">
+                 <form action="confirmed.html" method="GET">
+                    <label class="myinput">First Name*<input type="text" name="fname" placeholder="John" required></label>
+                    <label class="myinput">Last Name*<input type="text" name="lname" placeholder="Doe" required></label>
+                    <label class="myinput">Email*<input type="email" name="email" required></label>
+                    <label class="myinput">Cell Phone*<input type="tel" name="cellphone" required></label>
+            </div>
+            <div class="formdiv2con">
+                <label>Message<textarea name="description" cols="40" rows="5"></textarea></label>
+                    <label><input id="currentdate" type="hidden" name="currentdate" value=""></label>
+                    <input class="mysubmit" type="submit" value="Submit">
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footersection1">
