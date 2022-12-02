@@ -1,0 +1,1 @@
+input class mycheck id check temple 1 type checkbox onclick liketemple1a
