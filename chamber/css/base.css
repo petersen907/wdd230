@@ -373,7 +373,7 @@ label.myinput input:required{
 }
 .formseccon{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;	
 	grid-template-areas:
 	"div1 div2";
 	background-color: #E7D0A2;

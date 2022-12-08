@@ -1,0 +1,306 @@
+body{
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+header{
+    background-color: darkred;
+    color: #fff;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: -20px;
+    width: 100%;
+}
+
+div.card{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 5rem;
+    border-color: black;
+}
+main#index {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "A w w w B"
+    "A games games games B"
+    "A weather go go B";
+}
+h1,h2,h3,h4,h5{
+    /* color: #fff; */
+    text-align: center;
+    text-decoration: none;
+}
+#index p {
+    font-size: 15px;
+    color: #1f1f1f;
+    text-align: center;
+}
+/* .btn{
+	background-color: darkred;
+    color: #1f1f1f;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+} */
+
+button{
+	position: absolute;
+	background-color: darkred;
+    color: #1f1f1f;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+	top: 200px;
+    right: 450px;
+	width: 150px;
+	height: 75px;
+	border: 1px solid rgba(0,0,0,.1);
+}
+nav {
+    background-color: #1f1f1f;
+	margin: 0 auto	;
+	position: absolute;
+}
+nav ul{
+	display:none;
+	background-color: #1f1f1f;
+	color: white;
+	list-style-type: none;
+	padding: .5rem;
+}
+nav a{
+	color: white;
+	padding: .5rem;
+	text-decoration: none;
+}
+nav ul.open{
+	display:block;
+}
+nav ul li.active a{
+	background-color: #1f1f1f;
+	color: white;
+}
+nav ul li a:hover{
+	background-color: #323232;
+	color: #fff;
+}
+
+header nav {
+    grid-area: navi;
+    display: grid;
+    /* margin: 20 auto	; */
+    /* width: 400px; */
+    position: relative;
+    /* top: 5px;
+    right: 50px; */
+}
+nav button {
+    display: none;
+}
+nav ul#navbar{
+    display:flex;
+    justify-content: center;
+    /* margin-left: 2vw; */
+    /* border-left: 1px solid rgba(0, 0, 0, 0.3); */
+} 
+nav ul li a{
+    border: none;
+    /* border-right: rgba(0, 0, 0, 0.3); */
+}
+.calltoaction {
+    font-size: 3em;
+}
+
+
+
+
+
+
+
+#sidebarA {
+    background-color: #323232;
+    color: #fff;
+    height: 1300px;
+    grid-area: A;
+    /* margin-top: -16px; */
+}
+#sidebarB {
+    background-color: #323232;
+    color: #fff;
+    height: 1300px;
+    grid-area: B;
+    /* margin-top: -16px; */
+    /* margin-bottom: -16px; */
+}
+#white {
+    background-color: #fff;
+    color: #1f1f1f;
+    border: #1f1f1f;
+    grid-area: w;
+    display: grid;
+    height: 600px;
+}
+#newgames {
+    display: grid;
+    grid-area: games;
+    background-color: #815acf;
+    color: #fff;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#weather {
+    display: grid;
+    grid-area: weather;
+    background-color: #3052be;
+    color: #fff;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#go {
+    display: grid;
+    grid-area: go;
+    background-color: #66ac54;
+    color: #fff;
+    height: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* Pokeball Animation CSS */
+.pokeball {
+    position: absolute;
+    top:calc(50% - 150px);
+    left:calc(50% - 150px);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    transform-origin: 50% 100%;
+    animation: wobble 5s infinite;
+}
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to right, crimson, darkred);
+}
+.top::after {
+    content: '';
+    position: absolute;
+    top: 3em;
+    left: 2em;
+    width: 6em;
+    height: 2em;
+    background: #fff;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: black;
+    transform: translateY(-50%);
+}
+.middle::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    background: black;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.middle::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to right, white, lightgrey);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.middle:hover::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(#e1415b);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: #e1415b;
+    cursor: pointer;
+}
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to right, white, lightgrey);
+}
+.shadow {
+    position: absolute;
+    top: calc(50% + 150px);
+    left: 50%;
+    width: 300px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    filter: blur(10px);
+    transform: translate(-50%, -50%);
+}
+@keyframes wobble {
+    0%,
+    20%,
+    24%,
+    28%,
+    80%,
+    84%,
+    88%,
+    92%,
+    96%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    22%,
+    82%,
+    90% {
+        transform: rotate(4deg);
+    }
+
+    26%,
+    86%,
+    94% {
+        transform: rotate(-4deg);
+    }
+}
+
+footer{
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    margin-top: -22px;
+    /* margin: -22px; */
+}
