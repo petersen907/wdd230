@@ -45,7 +45,7 @@
             "name" : "Charizard",
             "number" : "#006",
             "websiteURL" : "https://www.serebii.net/pokedex-swsh/charizard/",
-            "type" : "Fire",
+            "type" : "Fire/Flying",
             "abilities" : "Blaze"
         },
         {

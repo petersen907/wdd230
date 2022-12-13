@@ -549,6 +549,8 @@ footer{
 		text-align: center;
 		background-color: #E7D0A2;
 		color: black;
+		margin: 1rem;
+		padding: 1rem;
 	}
 	.headerdate{
 		font-size: 1.5rem;

@@ -3,11 +3,13 @@ const requestURL = './data/data.json';
 function displayPokemon(pokemon) {  // Create elements to add to the document
     let card = document.createElement('section');
     card.innerHTML = `
-        <img src="${card.imageURL}" alt="character image">
-        <p>${card.name} ${card.number}</p>
-        <p>${card.type}</p>
-        <p>${card.abilities}</p>
-        <p><a href="${card.websiteURL}">${card.websiteURL}</a></p>`;
+        <img src="${pokemon.imageURL}" alt="character image">
+        <div class="cardinfo">
+          <p>${pokemon.name} ${pokemon.number}</p>
+          <p>Type: ${pokemon.type}</p>
+          <p>Ability: ${pokemon.abilities}</p>
+          <p>Resource: <a href="${pokemon.websiteURL}">${pokemon.websiteURL}</a></p>
+        </div>`;
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);
   }

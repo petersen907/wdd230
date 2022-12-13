@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/calc.js" defer></script>
     <script src="https://unpkg.com/@smogon/calc/dist/data/production.min.js"></script>
     <script src="https://unpkg.com/@smogon/calc"></script>
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -12,19 +14,163 @@
 </head>
 <body>
     <header>
-        <h1>This is the header</h1>
+        <h1 class="center">This is the header</h1>
         <nav>
             <button id="hamburger"><span>&equiv;</span></button>
             <ul id="navbar">
                 <li ><a href="index.html">Home</a></li>
                 <li ><a href="pokedex.html">Pokedex</a></li>
                 <li class="active"><a href="damage.html">Damage Calculator</a></li>
-                <li ><a href="teambuilder.html">Team Builder</a></li>
+                <li ><a href="requestform.html">Request Form</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div> 1 + 2 = 3</div>
+        <table>
+            <caption>Damage Reference</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Multiplyer</th>
+                        <th>Sales Goal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>August</td>
+                        <td>$3,590</td>
+                        <td>$4,000</td>
+                    </tr>
+                    <tr>
+                        <td>September</td>
+                        <td>$4,420</td>
+                        <td>$5,000</td>
+                    </tr>
+                    <tr>
+                        <td>October</td>
+                        <td>$4,870</td>
+                        <td>$5,000</td>
+                    </tr>
+                    <tr>
+                        <td>November</td>
+                        <td>$8,610</td>
+                        <td class="nov2">$7,500</td>
+                    </tr>
+                    <tr>
+                        <td>Black Friday</td>
+                        <td colspan="2">$3,200</td>
+                    </tr>
+                    <tr>
+                        <td>December</td>
+                        <td>$6,820</td>
+                        <td>$7,500</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Compiled 12.20.2020 by J.P.</td>
+                    </tr>
+                </tfoot>
+        </table>
+        
+        <div class="app">
+
+            <div class="calculator">
+    
+                <div class="display">
+                    <div class="content">
+                        <div class="input"></div>
+                        <div class="output"></div>
+                    </div>
+                </div>
+    
+                <div class="keys">
+    
+                    <div data-key="clear" class="key action">
+                        <span>AC</span>
+                    </div>
+    
+                    <div data-key="brackets" class="key action">
+                        <span>( )</span>
+                    </div>
+    
+                    <div data-key="%" class="key action">
+                        <span>%</span>
+                    </div>
+    
+                    <div data-key="/" class="key operator">
+                        <span>÷</span>
+                    </div>
+    
+                    <div data-key="7" class="key">
+                        <span>7</span>
+                    </div>
+    
+                    <div data-key="8" class="key">
+                        <span>8</span>
+                    </div>
+    
+                    <div data-key="9" class="key">
+                        <span>9</span>
+                    </div>
+    
+                    <div data-key="*" class="key operator">
+                        <span>x</span>
+                    </div>
+    
+                    <div data-key="4" class="key">
+                        <span>4</span>
+                    </div>
+    
+                    <div data-key="5" class="key">
+                        <span>5</span>
+                    </div>
+    
+                    <div data-key="6" class="key">
+                        <span>6</span>
+                    </div>
+    
+                    <div data-key="-" class="key operator">
+                        <span>-</span>
+                    </div>
+    
+                    <div data-key="1" class="key">
+                        <span>1</span>
+                    </div>
+    
+                    <div data-key="2" class="key">
+                        <span>2</span>
+                    </div>
+    
+                    <div data-key="3" class="key">
+                        <span>3</span>
+                    </div>
+    
+                    <div data-key="+" class="key operator">
+                        <span>+</span>
+                    </div>
+    
+                    <div data-key="backspace" class="key action">
+                        <span>&lt;</span>
+                    </div>
+    
+                    <div data-key="0" class="key">
+                        <span>0</span>
+                    </div>
+    
+                    <div data-key="." class="key">
+                        <span>.</span>
+                    </div>
+                    
+                    <div data-key="=" class="key operator">
+                        <span>=</span>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+    
     </main>
     <footer>
         <div>This is the footer</div>
