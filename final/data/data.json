@@ -1,9 +1,9 @@
 {
     "pokemon" : [
-        {
+        {   
             "imageURL" : "images/001.png",
             "name" : "Bulbasaur",
-            "number" : "#001",
+            "number" : "001",
             "websiteURL" : "https://www.serebii.net/pokedex-swsh/bulbasaur/",
             "type" : "Grass",
             "abilities" : "Overgrow"
@@ -11,7 +11,7 @@
         {
             "imageURL" : "images/002.png",
             "name" : "Ivysaur",
-            "number" : "#002",
+            "number" : "002",
             "websiteURL" : "https://www.serebii.net/pokedex-swsh/ivysaur/",
             "type" : "Grass",
             "abilities" : "Overgrow"
@@ -19,7 +19,7 @@
         {
             "imageURL" : "images/003.png",
             "name" : "Venasaur",
-            "number" : "#003",
+            "number" : "003",
             "websiteURL" : "https://www.serebii.net/pokedex-swsh/venusaur/",
             "type" : "Grass/Poison",
             "abilities" : "Overgrow"
@@ -27,7 +27,7 @@
         {
             "imageURL" : "images/004.png",
             "name" : "Charmander",
-            "number" : "#004",
+            "number" : "004",
             "websiteURL" : "https://www.serebii.net/pokedex-swsh/charmander/",
             "type" : "Fire",
             "abilities" : "Blaze"
@@ -35,7 +35,7 @@
         {
             "imageURL" : "images/005.png",
             "name" : "Charmeleon",
-            "number" : "#005",
+            "number" : "005",
             "websiteURL" : "https://www.serebii.net/pokedex-swsh/charmeleon/",
             "type" : "Fire",
             "abilities" : "Blaze"
@@ -43,7 +43,7 @@
         {
             "imageURL" : "images/006.png",
             "name" : "Charizard",
-            "number" : "#006",
+            "number" : "006",
             "websiteURL" : "https://www.serebii.net/pokedex-swsh/charizard/",
             "type" : "Fire/Flying",
             "abilities" : "Blaze"
@@ -51,7 +51,7 @@
         {
             "imageURL" : "images/007.png",
             "name" : "Squirtle",
-            "number" : "#007",
+            "number" : "007",
             "websiteURL" : "https://www.serebii.net/pokedex-swsh/squirtle/",
             "type" : "Water",
             "abilities" : "Torrent"
@@ -59,7 +59,7 @@
         {
             "imageURL" : "images/008.png",
             "name" : "Wartortle",
-            "number" : "#008",
+            "number" : "008",
             "websiteURL" : "https://www.serebii.net/pokedex-swsh/wartortle/",
             "type" : "Water",
             "abilities" : "Torrent"
@@ -67,7 +67,7 @@
         {
             "imageURL" : "images/009.png",
             "name" : "Blastoise",
-            "number" : "#009",
+            "number" : "009",
             "websiteURL" : "https://www.serebii.net/pokedex-swsh/blastoise/",
             "type" : "Water",
             "abilities" : "Torrent"
