@@ -6,23 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <script src="js/join.js" defer></script>
     <link rel="shortcut icon" href="images/favicon.ico">
-    <title>Plan out your team!</title>
+    <title>Request content</title>
 </head>
 <body>
     <header>
-        <h1 class="center">Submit a suggestion!</h1>
-        <nav>
-            <button id="hamburger"><span>&equiv;</span></button>
-            <ul id="navbar">
-                <li ><a href="index.html">Home</a></li>
-                <li ><a href="pokedex.html">Pokedex</a></li>
-                <li ><a href="damage.html">Damage Calculator</a></li>
-                <li class="active"><a href="requestform.html">Request Form</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="logodiv">
+            <div class="pokemon"><a href="index.html"><img class="sitelogo" src="images/pokemonlogo.png" alt="header logo"></a></div>
+        </div>
+            <nav>
+                <button id="hamburger"><span>&equiv;</span></button>
+                <ul id="navbar">
+                    <li ><a href="index.html">Home</a></li>
+                    <li ><a href="pokedex.html">Pokedex</a></li>
+                    <li ><a href="damage.html">Damage Calculator</a></li>
+                    <li class="active"><a href="requestform.html">Request Form</a></li>
+                </ul>
+            </nav>
+        </header>
     <main>
         <section class="formsec">
             <div class="formdiv1">
@@ -30,14 +35,15 @@
                     <h2>Website Request Form</h2>
                     <label class="myinput">First Name*<input type="text" name="fname" placeholder="John" required></label>
                     <label class="myinput">Last Name*<input type="text" name="lname" placeholder="Doe" required></label>
+                    <label class="myinput">Email*<input type="email" name="email" placeholder="doe.john@email.com" required></label>
                     <label class="myinput">Page Title/Character Name*<input type="text" name="title" placeholder="Team Builder" required></label>
-                    <h3>Page Suggestion</h3>
+                    <h3 class="spacing">Page Suggestion</h3>
                     <label class="myradio"><input type="radio" name="level" value="character">Character Request</label>
                     <label class="myradio"><input type="radio" name="level" value="builder">Team Builder</label>
                     <label class="myradio"><input type="radio" name="level" value="guide">Location Guide</label>
                     <label class="myradio"><input type="radio" name="level" value="damage">Upgrades to Damage Calculator</label>
                     <label class="myradio"><input type="radio" name="level" value="damage">Other</label>
-                    <label>Page Description<textarea name="description" cols="40" rows="5"></textarea></label>
+                    <label class="textarea">Page Description<textarea name="description" cols="40" rows="5"></textarea></label>
                     <input class="mysubmit" type="submit" value="Request!">
                 </form>
             </div>
@@ -45,35 +51,52 @@
                 <h2>Popular Page Suggestions</h2>
                 <h3>Character Request</h3>
                     <ul>
-                        <li>For non profit organizations and there is no fee</li>
+                        <li>Option for pokemon submissions</li>
                     </ul>
                 <h3>Team Builder</h3>
                     <ul>
-                        <li>15% discount on events</li>
-                        <li>10% discount on advertising</li>
-                        <li>Fee of $50/month</li>
+                        <li>Team selector from pokedex</li>
+                        <li>Ability to select 4 moves</li>
+                        <li>Stats for iv/ev</li>
                     </ul>
                 <h3>Location Guide</h3>
                     <ul>
-                        <li>25% discount on events</li>
-                        <li>15% discount on advertising</li>
-                        <li>Free participation in the trade fair</li>
-                        <li>Fee of $100/month</li>
+                        <li>Where to find evolution items</li>
+                        <li>Finding rare spawns in the game</li>
+                        <li>Where to buy sandwhich ingredients</li>
+                        <li>Where to find gym leaders and other characters</li>
                     </ul>
                 <h3>Upgrades to Damage Calculator</h3>
                     <ul>
-                        <li>50% discount on events</li>
-                        <li>50% discount on advertising</li>
-                        <li>Free participation in the trade fair</li>
-                        <li>5 free featured ads per year</li>
-                        <li>1 free training per quarter</li>
-                        <li>Fee of $250/month</li>
+                        <li>Adding weather effects</li>
+                        <li>Adding move damage</li>
+                        <li>The addition of double vs single target damage</li>
+                        <li>Same type attack bonus calculations</li>
+                        <li>Type matchup chart</li>
+                        <li>Status effects</li>
                     </ul>
             </div>
         </section>
     </main>
     <footer>
-        <h1>This is the footer</h1>
+        <div class="pikachu"><img class="pikachulogo" src="images/sitelogo.png" alt="header logo"></div>
+        <div class="sources">
+            <h2>Sources</h2>
+            <ul>
+                <li ><a href="https://www.pokemon.com/us" target="_blank">The Pokemon Company</a></li>
+                <li ><a href="https://www.serebii.net/" target="_blank">Serebii</a></li>
+                <li ><a href="https://calc.pokemonshowdown.com/" target="_blank">Pokemon Showdown Damage Calculator</a></li>
+                <li ><a href="https://www.pikalytics.com/" target="_blank">Competitive Stats Reference</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img class="socialicon" src="images/facebooklogo.png" alt="facebook image">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img class="socialicon" src="images/twitterlogo.png" alt="twitter image">
+            </a>
+        </div>
     </footer>
 </body>
 </html>

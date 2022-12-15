@@ -6,50 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <script src="js/index.js" defer></script>
     <link rel="shortcut icon" href="images/favicon.ico">
-    <title>thank you form page</title>
+    <title>thank you!</title>
 </head>
 <body>
     <header>
-        <h1 class="center">Explore the World of Pokemon!</h1>
-        <nav>
-            <button id="hamburger"><span>&equiv;</span></button>
-            <ul id="navbar">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li ><a href="pokedex.html">Pokedex</a></li>
-                <li ><a href="damage.html">Damage Calculator</a></li>
-                <li ><a href="requestform.html">Request Form</a></li>
-            </ul>
-        </nav>
-        <div class="date">
-            <span class="headerdate"></span>
+        <div class="logodiv">
+            <div class="pokemon"><a href="index.html"><img class="sitelogo" src="images/pokemonlogo.png" alt="header logo"></a></div>
         </div>
-    </header>
+            <nav>
+                <button id="hamburger"><span>&equiv;</span></button>
+                <ul id="navbar">
+                    <li ><a href="index.html">Home</a></li>
+                    <li ><a href="pokedex.html">Pokedex</a></li>
+                    <li ><a href="damage.html">Damage Calculator</a></li>
+                    <li class="active"><a href="requestform.html">Request Form</a></li>
+                </ul>
+            </nav>
+        </header>
     <main>
-        <p>Thank you for joining the chamber!</p>
+        <div id="thankyou">
+            <h1>Thank you for requesting content!</h1>
+            <p>Your feed back helps us improve the website and understand the direction you as part of the community would like us to take. Please submit again if you have any additional ideas!</p>
+         </div>
     </main>
     <footer>
-        <div class="footersection1">
-            <div class="foot_img"><img class="flogo" src="images/Goldnugget.jpg" alt="Berk's Chamber of Commerce Logo" ></div>
-        
-            <div class="address">
-                <h3>Gold Rush Chamber of Commerce</h3>
-                <p>42 Wallaby Way</p>
-                <p>Port Chester, NY 10573</p>
-            </div>
-            <div class="contact">
-                <p>GoldRushAlaska@Chamber.org</p>
-                <p>(907) 243-0000</p>
-                <p><a href="https://goo.gl/maps/7bnWvhd7ot3ZSctQ6">Location Map</a></p>
-            </div>
+        <div class="pikachu"><img class="pikachulogo" src="images/sitelogo.png" alt="header logo"></div>
+        <div class="sources">
+            <h2>Sources</h2>
+            <ul>
+                <li ><a href="https://www.pokemon.com/us" target="_blank">The Pokemon Company</a></li>
+                <li ><a href="https://www.serebii.net/" target="_blank">Serebii</a></li>
+                <li ><a href="https://calc.pokemonshowdown.com/" target="_blank">Pokemon Showdown Damage Calculator</a></li>
+                <li ><a href="https://www.pikalytics.com/" target="_blank">Competitive Stats Reference</a></li>
+            </ul>
         </div>
-        <div class="footersection2"><hr></div>
-        <div class="info">
-            <div>&copy; <span></span> Gold Rush Chamber </div>
-            <div>Joshua Petersen</div>
-            <div>WDD230 Project</div>
-            <div id="datediv">Last Updated: <span id="lastupdatedate"></span></div>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img class="socialicon" src="images/facebooklogo.png" alt="facebook image">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img class="socialicon" src="images/twitterlogo.png" alt="twitter image">
+            </a>
         </div>
     </footer>
 </body>
